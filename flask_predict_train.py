@@ -14,7 +14,7 @@ import numpy as np
 # import csv
 import os
 os.getcwd()
-os.chdir("C:\\Users\\Meekey\\Documents\\CAPM\\Spyder Code\\Flask")
+os.chdir("/Users/meekey/Documents/GitHub/Flask")
 
 data = pd.read_excel("tech_ind.xlsx")
 train = data.iloc[:len(data)-30,1:]

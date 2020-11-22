@@ -14,7 +14,7 @@ import tensorflow as tf
 global graph
 graph = tf.get_default_graph()
     
-os.chdir("C:\\Users\\Meekey\\Documents\\CAPM\\Spyder Code\\Flask")
+os.chdir("/Users/meekey/Documents/GitHub/Flask")
 with open('regressor.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
     
@@ -39,7 +39,7 @@ def pred_price():
     prediction = sc.inverse_transform(prediction)
     return str(prediction)
 if __name__ == '__main__':
-    app.run(debug=True, port=9000)
+    app.run()
 
 
 
